@@ -1,3 +1,5 @@
+
+
 <nav class="bg-gray-800">
   <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6">
     <div class="relative flex h-16 items-center justify-between">
@@ -30,7 +32,7 @@
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex items-center space-x-1 sm:space-x-1">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="/" class="<?= active('/') ?>   rounded-md px-3 py-2 text-sm font-medium">Home</a>
+            <a href="/dashboard" class="<?= active('/dashboard') ?>   rounded-md px-3 py-2 text-sm font-medium">Home</a>
             <a href="/books" class="<?= active('/books')  ?> rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Books</a>
             <a href="/addbook" class="<?= active('/addbook') ?>  rounded-md px-3 py-2 text-sm font-medium">Add Book</a>
             <a href="/issuebook" class="<?= active('/issuebook') ?>  rounded-md px-3 py-2 text-sm font-medium">Issue Book</a>
@@ -42,13 +44,13 @@
       </div>
       <div class="flex items-center justify-items-end ml-4">
 
-          <a href="/logout" class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+          <a href="/logout" class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800  hover:bg-gray-700 hover:text-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
             <span class="sr-only">Logout</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out h-8 w-8 rounded-full text-white">
               <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
               <polyline points="16 17 21 12 16 7"></polyline>
               <line x1="21" y1="12" x2="9" y2="12"></line>
-            </svg>
+            </svg> <span class="text-white rounded-md px-3 py-1.5 text-sm font-medium hidden sm:block">Logout</span>
           </a>
 
       </div>
@@ -59,13 +61,13 @@
   <div class="hidden sm:hidden" id="mobile-menu">
     <div class="space-y-1 px-2 pb-3 pt-2">
       <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <a href="/" class="<?= active('/dashboard') ?>   block rounded-md px-3 py-2 text-sm font-medium">Home</a>
-            <a href="/books" class="<?= active('/books')  ?> block rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Books</a>
-            <a href="/addbook" class="<?= active('/addbook') ?>  block rounded-md px-3 py-2 text-sm font-medium">Add Book</a>
-            <a href="/issuebook" class="<?= active('/issuebook') ?> block  rounded-md px-3 py-2 text-sm font-medium">Issue Book</a>
-            <a href="/students" class="<?= active('/students') ?>  block rounded-md px-3 py-2 text-sm font-medium">Students</a>
-            <a href="/regstd" class="<?= active('/regstd') ?>  block rounded-md px-3 py-2 text-sm font-medium">Register Student</a>
-            <a href="/transactions" class="<?= active('/transactions') ?> block  rounded-md px-3 py-2 text-sm font-medium">Transactions</a>
+      <a href="/dashboard.php" class="<?= active('/dashboard.php') ?>   block rounded-md px-3 py-2 text-sm font-medium">Home</a>
+            <a href="/Books.php" class="<?= active('/Books.php')  ?> block rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Books</a>
+            <a href="/add_book.php" class="<?= active('/add_book.php') ?>  block rounded-md px-3 py-2 text-sm font-medium">Add Book</a>
+            <a href="/issue_book.php" class="<?= active('/issue_book.php') ?> block  rounded-md px-3 py-2 text-sm font-medium">Issue Book</a>
+            <a href="/students.php" class="<?= active('/students.php') ?>  block rounded-md px-3 py-2 text-sm font-medium">Students</a>
+            <a href="/register_student.php" class="<?= active('/register_student.php') ?>  block rounded-md px-3 py-2 text-sm font-medium">Register Student</a>
+            <a href="/trans.php" class="<?= active('/trans.php') ?> block  rounded-md px-3 py-2 text-sm font-medium">Transactions</a>
          </div>
   </div>
 </nav>

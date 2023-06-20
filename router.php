@@ -1,16 +1,16 @@
 <?php
-$uri = parse_url($_SERVER['REQUEST_URI'])['path'];  
+$uri = parse_url($_SERVER["REQUEST_URI"])["path"];  
 $routes = [
-    '/' => './login.php',
-    '/dashboard' => './dashboard.php',
-    '/students' => './students.php',
-    '/regstd' => './register_student.php',
-    '/books' => './books.php',
-    '/addbook' => './add_book.php',
-    '/issuebook' => './issue_book.php',
-    '/transactions' => './trans.php',
-    '/logout' => './logout.php',
-    '/login' => './login.php',
+    "/" => "./view/login.view.php",
+    "/dashboard" => "./view/dashboard.view.php",
+    "/students" => "./view/students.view.php",
+    "/regstd" => "./view/register_student.view.php",
+    "/books" => "./view/Books.view.php",
+    "/addbook" => "./view/add_book.view.php",
+    "/issuebook" => "./view/issue_book.view.php",
+    "/transactions" => "./view/trans.view.php",
+    "/logout" => "./view/logout.php",
+    "/login" => "./view/login.view.php",
 ];
 
 
@@ -18,7 +18,7 @@ function routeToController($uri, $routes){
     
 
     if(array_key_exists($uri, $routes)){
-        require $routes[$uri];
+        require $routes[$uri];  
     }
 }
 routeToController($uri, $routes);

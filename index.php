@@ -1,4 +1,4 @@
 <?php
-require 'function.php';
-require 'router.php';
+require './function.php';
+require_once './router.php';
 ?>

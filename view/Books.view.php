@@ -1,5 +1,7 @@
 <?php
 require "auth/auth.php";
+
+
 ?>
 <!DOCTYPE html>
 <html class="h-full bg-white">
@@ -9,6 +11,7 @@ require "auth/auth.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book List</title>
+
     <script defer src="js/get_books.js"></script>
     <script defer src="js/manage_book.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>

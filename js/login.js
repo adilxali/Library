@@ -1,3 +1,5 @@
+import { popup } from './popup.js';
+const body = document.querySelector('body');
 document.getElementById('loginForm').addEventListener('submit', function(event) {
       event.preventDefault();
       
@@ -26,12 +28,15 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
       .then(function(data) {
         console.log(data.message);
         if (data.status === 'success') {
+          body.appendChild(popup(data.message));
           // Redirect to the protected page
+
+
           window.location.href = '/dashboard';
           console.log(formData)
         } else {
           // Show an error message
-          alert('Invalid username or password.');
+          showToast('Invalid username or password.');
         }
       })
       .catch(function(error) {

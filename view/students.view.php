@@ -1,3 +1,8 @@
+<?php
+require_once "auth/auth.php";
+
+
+?>
 <!DOCTYPE html>
 <html class="h-full bg-white">
 

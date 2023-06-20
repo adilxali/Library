@@ -8,9 +8,11 @@ if (isset($_SESSION['username'])) {
 <html class="h-full bg-white">
 <head>
   <title>Login</title>
-  <script defer src="js/login.js"></script>
+  <script defer type="module" src="js/login.js"></script>
   <!-- tailwind cdn -->
   <script src="https://cdn.tailwindcss.com"></script>  
+
+  </style>
 </head>
 <body class="h-full">
   <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
